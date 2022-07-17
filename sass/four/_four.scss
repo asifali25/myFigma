@@ -3,6 +3,7 @@
 .four {
     width: min(90%, 350px);
     margin: 0 auto;
+    padding-bottom: min(5%, 50px);
 
     &__h1 {
         font-size: 1.8rem;
