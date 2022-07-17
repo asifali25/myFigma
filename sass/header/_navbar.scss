@@ -1,0 +1,60 @@
+@use '../util/colors' as col; 
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    &__ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        list-style: none;
+    }
+
+    &__li {
+        padding-right: 6rem;
+    }
+
+    &__a {
+        text-decoration: none;
+        color: col.$white;
+        font-size: 1.4rem;
+        font-weight:lighter;
+    }
+
+    &__btn {
+        background-color: col.$button-color;
+        border: none;
+        border-radius: 5px;
+    }
+
+    &__btn p {
+        font-size: 1.4rem;
+        font-weight: lighter;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        color: col.$white;
+    }
+
+    &__hamberger {
+        color: col.$white;
+        display: none;
+        margin-right: 20px;
+        background-color: transparent;
+        border: none;
+
+    }
+
+
+    @media screen and (max-width: 1300px) {
+       &__nav {
+        display: none;
+       }
+
+       &__hamberger {
+        display: block;
+       }
+    }
+}

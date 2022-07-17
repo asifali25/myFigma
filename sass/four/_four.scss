@@ -1,0 +1,79 @@
+@use '../util/' as u;
+
+.four {
+    width: min(90%, 350px);
+    margin: 0 auto;
+
+    &__h1 {
+        font-size: 1.8rem;
+        padding-top: min(40%, 1000px);
+        padding-bottom: min(10%, 300px);
+        text-align: center;
+    }
+
+    &__googleBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: u.$white;
+        width: 100%;
+        border: 1px solid #BCBCBC;
+    }
+
+    &__googleBtn span {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__googleBtn span:nth-child(2) {
+        padding-left: 10px;
+        font-weight: bold;
+    }
+
+    &__h2Or {
+        text-align: center;
+        margin-top: min(5%, 20px);
+        margin-bottom: min(5%, 20px);
+    }
+
+    &__form {
+        width: 100%;
+    }
+
+    &__form input {
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        border: 1px solid #BCBCBC;
+    }
+
+    &__form input:nth-child(1) {
+        margin-bottom: min(2%, 50px);
+    }
+
+    &__formBtn {
+        margin-top: 15px;
+        margin-bottom: min(10%, 30px);
+        width: 100%;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        border: none;
+        background-color: u.$button-color;
+        color: u.$white;
+    }
+
+    &__singUp {
+        margin-bottom: min(10%, 20px);
+        text-align: center;
+        color: u.$signup-color;        
+    }
+
+    &__already {
+        text-align: center;
+    }
+
+    &__already span {
+        color: u.$signup-color;        
+    }
+}

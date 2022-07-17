@@ -1,0 +1,32 @@
+@use '../util/' as ut;
+.nav-sidebar {
+    position: absolute;
+    top: 60px;
+    right: -800px;
+    // display: none;
+    // background-color: ut.$background-color-black;
+    background-color: ut.$background-color-black ;
+    width: min(100%, 700px);
+    transition: all 0.5s ease;
+    z-index: 2;
+
+    &__ul {
+        list-style: none;
+       
+    }
+
+    &__li {
+        padding: 20px;
+    }
+
+    &__a {
+        text-decoration: none;
+        color: ut.$white;
+        padding: 20px;
+        font-size: 1.4rem;
+    }
+}
+
+.nav-sidebar.active {
+    right: 0;
+}

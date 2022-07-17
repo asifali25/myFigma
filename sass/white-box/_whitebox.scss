@@ -1,0 +1,6 @@
+@use '../util/' as u;
+
+.white-box {
+    background-color: u.$white;
+    width: 100%;
+}
